@@ -34,6 +34,85 @@ body {
   top: 68px;
 }
 
+#buttons1 {
+  position: absolute;
+  width: 195px;
+  height: 160px;
+  left: 973px;
+  top: 241px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#buttons2 {
+  position: absolute;
+  width: 195px;
+  height: 240px;
+  left: 973px;
+  top: 491px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* class selectors */
+
+.month {
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  margin: auto;
+  text-align: center;
+  top: 140px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #2A3159;
+
+}
+
+.squares {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  position: absolute;
+  width: 440px;
+  height: 312px;
+  margin-left: 58px;
+  margin-right: 58px;
+  margin-top: 190px;
+  margin-bottom: 60px;
+
+}
+
+.days {
+  background-color: #FFA443;
+  width: 57px;
+  height: 57px;
+  grid-column-start: auto;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.clicked, .unclicked {
+  width: 195px;
+  height: 59px;
+  box-shadow: 3px 4px 0px 1px #72C1B2;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.unclicked {
+  background-color: #FFFFFF;
+  color: #2A3159;
+}
+
+.clicked {
+  background-color: #506987;
+  color: #FFFFFF;
+}
+
 /*background-image: url('texture.png');
 background-position: center;
 background-repeat: repeat;
