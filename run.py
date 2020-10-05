@@ -9,6 +9,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/nzbirthdays', methods=['GET'])
-def nzbirthdays_list():
-    return jsonify('amount')
+@app.route('/nzjanuary', methods=['GET'])
+def nzjanuary_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    nzjanuary = []
+    cur = con.execute('SELECT * FROM nzjanuary')
+
+    for row in cur:
+        nzjanuary.append(list(row))
+    con.close()
+    return jsonify(nzjanuary)
