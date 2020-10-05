@@ -1,3 +1,19 @@
+monthnames = [
+  ['January'],
+]
+
+monthmames = [0]
+
+for (let i=0; i < monthnames.length; i++) {
+  let monthname = document.createElement('div');
+    monthname.className = 'monthname';
+    monthname.innerHTML += '<h1>' + monthnames[i][0] + '</h1>';
+    document.getElementById('calendar').appendChild(monthname);
+}
+
+
+
+
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
 
@@ -6,11 +22,32 @@ function renderMonth(data) {
     days.innerHTML = i + '-' + data[i][2];
     days.className = 'days';
 
-    if (data[i][2] < 12000) {
-      days.style.backgroundColor = '#00F';
+    if (data[i][2] < 10500) {
+      days.style.backgroundColor = '#FFECAA';
+    }
+    else if (data[i][2] < 11000) {
+      days.style.backgroundColor = '#FFE58C';
+    }
+    else if (data[i][2] < 11500) {
+      days.style.backgroundColor = '#FFD84A';
+    }
+    else if (data[i][2] < 12000) {
+      days.style.backgroundColor = '#FFBF43';
+    }
+    else if (data[i][2] < 12500) {
+      days.style.backgroundColor = '#FFA443';
     }
     else if (data[i][2] < 13000) {
-      days.style.backgroundColor = '#0F0';
+      days.style.backgroundColor = '#FF8744';
+    }
+    else if (data[i][2] < 13500) {
+      days.style.backgroundColor = '#FD6930';
+    }
+    else if (data[i][2] < 14000) {
+      days.style.backgroundColor = '#FF4337';
+    }
+    else if (data[i][2] < 14500) {
+      days.style.backgroundColor = '#FF4337';
     }
     else {
       days.style.backgroundColor = '#F00';

@@ -118,16 +118,15 @@ body {
 
 /* class selectors */
 
-.month {
+.monthname {
   position: absolute;
   width: 100%;
-  height: 28px;
+  height: 20px;
   margin: auto;
   text-align: center;
-  top: 140px;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 28px;
+  top: 135px;
+  font-size: 13px;
+  line-height: 10px;
   color: #2A3159;
 
 }
