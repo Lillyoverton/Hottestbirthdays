@@ -19,3 +19,25 @@ def nzjanuary_list():
         nzjanuary.append(list(row))
     con.close()
     return jsonify(nzjanuary)
+
+@app.route('/nzfebruary', methods=['GET'])
+def nzfebruary_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    nzfebruary = []
+    cur = con.execute('SELECT * FROM nzfebruary')
+
+    for row in cur:
+        nzfebruary.append(list(row))
+    con.close()
+    return jsonify(nzfebruary)
+
+@app.route('/nzmarch', methods=['GET'])
+def nzmarch_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    nzmarch = []
+    cur = con.execute('SELECT * FROM nzmarch')
+
+    for row in cur:
+        nzmarch.append(list(row))
+    con.close()
+    return jsonify(nzmarch)
