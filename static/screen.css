@@ -54,6 +54,48 @@ body {
   grid-template-columns: 1fr;
 }
 
+#key {
+  position: absolute;
+  width: 675px;
+  height: 60px;
+  left: 71px;
+  top: 698px;
+  display: grid;
+  grid-template-columns: 70px 525px 70px;
+}
+
+#bar {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  height: 60px;
+  width: 525px;
+}
+
+#level1 {
+  background-color: #FFE58C;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#level2 {
+  background-color: #FFD84A;
+}
+
+#level3 {
+  background-color: #FFA443;
+
+}
+
+#level4 {
+  background-color: #FF7D4B;
+}
+
+#level5 {
+  background-color: #F54A4C;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; 
+}
+
 /* class selectors */
 
 .month {
@@ -90,6 +132,14 @@ body {
   grid-column-start: auto;
   margin: auto;
   border-radius: 5px;
+}
+
+.min, .max {
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+  font-size: 18px;
+  color: #2A3159;
 }
 
 .clicked, .unclicked {
