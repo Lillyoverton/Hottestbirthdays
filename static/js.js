@@ -1,16 +1,3 @@
-monthnames = [
-  ['January'],
-]
-
-monthmames = [0]
-
-for (let i=0; i < monthnames.length; i++) {
-  let monthname = document.createElement('div');
-    monthname.className = 'monthname';
-    monthname.innerHTML += '<h1>' + monthnames[i][0] + '</h1>';
-    document.getElementById('calendar').appendChild(monthname);
-}
-
 
 
 
@@ -60,7 +47,16 @@ function renderMonth(data) {
 endpoints = [
   '/nzjanuary',
   '/nzfebruary',
-  '/nzmarch'
+  '/nzmarch',
+  '/nzapril',
+  '/nzmay',
+  '/nzjune',
+  '/nzjuly',
+  '/nzaugust',
+  '/nzseptember',
+  '/nzoctober',
+  '/nznovember',
+  '/nzdecember'
 ]
 
 endpoint = 0;
@@ -91,5 +87,5 @@ document.getElementById('backarrow').addEventListener('click', () => {
     });
 
     console.log(endpoints[endpoint])
-    endpoint ++;
+    -- endpoint;
 })
