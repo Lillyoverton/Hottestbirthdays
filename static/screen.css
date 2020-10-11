@@ -5,63 +5,73 @@ body {
   background-color: #B9F5DF;
   background-image: url('texture.png');
   height: 100%;
-  width: 100%;
+  width: 1450px;
   background-position: fixed;
   left: 0;
   top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
 }
 
 /* id selectors */
+#container1 {
+  padding: 80px;
+  width: 70px;
+}
+
+#data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+#container2 {
+  padding: 80px;
+  margin-top: 40px;
+  padding-left: 70px;
+}
 
 #heading {
   font-size: 36px;
   color: #2A3159;
-  position: absolute;
   width: 533px;
   height: 43px;
-  left: 804px;
-  top: 109px;
   font-weight: bold;
   line-height: 43px;
+  margin: auto;
 }
 
 #calendar {
   background-image: url('calendarblank.svg');
-  position: absolute;
   width: 560px;
   height: 571px;
-  left: 122px;
-  top: 68px;
 }
 
 #buttons1 {
-  position: absolute;
   width: 195px;
   height: 160px;
-  left: 973px;
-  top: 241px;
   display: grid;
   grid-template-columns: 1fr;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 #buttons2 {
-  position: absolute;
   width: 195px;
   height: 240px;
-  left: 973px;
-  top: 491px;
   display: grid;
   grid-template-columns: 1fr;
+  margin: auto;
+  padding-top: 40px;
 }
 
 #key {
-  position: absolute;
   width: 675px;
   height: 60px;
-  left: 71px;
-  top: 698px;
   display: grid;
   grid-template-columns: 70px 525px 70px;
+  padding-top: 30px;
 }
 
 #bar {
@@ -99,37 +109,30 @@ body {
 #backarrow {
   background-image: url('arrowleft.svg');
   background-repeat: no-repeat;
-  position: absolute;
   width: 55px;
   height: 100px;
-  left: 60px;
-  top: 360px;
   cursor: pointer;
+  margin-top: 260px;
 }
 
 #nextarrow {
   background-image: url('arrowright.svg');
   background-repeat: no-repeat;
-  position: absolute;
   width: 55px;
   height: 100px;
-  left: 685px;
-  top: 360px;
   cursor: pointer;
+  margin-top: 260px;
 }
 
 /* class selectors */
 
 .monthname {
-  position: absolute;
   width: 100%;
   height: 20px;
-  margin: auto;
   text-align: center;
-  top: 135px;
   font-size: 30px;
   color: #2A3159;
-
+  padding-top: 135px;
 }
 
 #squares {

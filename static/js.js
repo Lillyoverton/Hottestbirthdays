@@ -1,6 +1,5 @@
 
 
-
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
 

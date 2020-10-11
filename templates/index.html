@@ -11,29 +11,35 @@
 
   <body>
 
-    <div id="container">
+    <div id="container1">
 
-    <a id="backarrow"></a>
+      <div id="data">
+        <a id="backarrow"></a>
 
-    <div id="calendar">
-      <div id="squares">
+        <div id="calendar">
+          <div id="squares">
 
-      </div>
-    </div>
-
-    <a id="nextarrow"></a>
-
-    <div id="key">
-      <div class="min">10000</div>
-        <div id="bar">
-          <div id="level1"></div>
-          <div id="level2"></div>
-          <div id="level3"></div>
-          <div id="level4"></div>
-          <div id="level5"></div>
+          </div>
         </div>
-      <div class="max">15000</div>
+
+        <a id="nextarrow"></a>
+      </div>
+
+      <div id="key">
+        <div class="min">10000</div>
+          <div id="bar">
+            <div id="level1"></div>
+            <div id="level2"></div>
+            <div id="level3"></div>
+            <div id="level4"></div>
+            <div id="level5"></div>
+          </div>
+        <div class="max">15000</div>
+      </div>
+
     </div>
+
+  <div id="container2">
 
     <h1 id="heading">How popular is your birthday?</h1>
 
@@ -47,6 +53,8 @@
       <a class="unclicked">England</a>
       <a class="unclicked">USA</a>
     </div>
+
+  </div>
 
     <script src="{{ url_for('static', filename='js.js') }}"></script>
 
