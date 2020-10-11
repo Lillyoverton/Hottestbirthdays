@@ -61,9 +61,23 @@ endpoints = [
 
 endpoint = 0;
 
+fetch(endpoints[endpoint], { method: 'GET' })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    renderMonth(data);
+  });
+
+  console.log(endpoints[endpoint])
+
 document.getElementById('nextarrow').addEventListener('click', () => {
 
-  // load birthdays
+  endpoint ++;
+
+  if (endpoint >= endpoints.length) {
+    endpoint = 0;
+  }
+
   fetch(endpoints[endpoint], { method: 'GET' })
     .then(response => response.json())
     .then(data => {
@@ -72,13 +86,17 @@ document.getElementById('nextarrow').addEventListener('click', () => {
     });
 
     console.log(endpoints[endpoint])
-    endpoint ++;
 })
 
 
 document.getElementById('backarrow').addEventListener('click', () => {
 
-  // load birthdays - back
+  -- endpoint;
+
+  if (endpoint < 0) {
+    endpoint = endpoints.length-1;
+  }
+
   fetch(endpoints[endpoint], { method: 'GET' })
     .then(response => response.json())
     .then(data => {
@@ -87,7 +105,6 @@ document.getElementById('backarrow').addEventListener('click', () => {
     });
 
     console.log(endpoints[endpoint])
-    -- endpoint;
 })
 
 names = [
@@ -96,21 +113,54 @@ names = [
   'March',
   'April',
   'May',
-  'June'
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
 ]
 
 name = 0;
 
+monthname = document.createElement('div');
+
+monthname.innerHTML = names[name];
+monthname.className = 'monthname';
+document.getElementById('calendar').appendChild(monthname);
+
+console.log(names[name])
+
 document.getElementById('nextarrow').addEventListener('click', () => {
 
-  for (let i = 0; i <= names.length; i++) {
-    let monthname = document.createElement('div');
-    monthname.innerHTML = name;
-    monthname.className = 'monthname';
-    document.getElementById('calendar').appendChild(monthname);
+  name ++;
+
+  if (name >= names.length) {
+    name = 0;
   }
 
+  monthname.innerHTML = names[name];
+  monthname.className = 'monthname';
+  document.getElementById('calendar').appendChild(monthname);
+
   console.log(names[name])
-  name ++;
+
+})
+
+
+document.getElementById('backarrow').addEventListener('click', () => {
+
+  -- name;
+
+  if (name < 0) {
+    name = names.length-1;
+  }
+
+  monthname.innerHTML = names[name];
+  monthname.className = 'monthname';
+  document.getElementById('calendar').appendChild(monthname);
+
+  console.log(names[name])
 
 })
