@@ -194,7 +194,91 @@ body {
   color: #FFFFFF;
 }
 
-/*background-image: url('texture.png');
-background-position: center;
-background-repeat: repeat;
-background-size: 4px;*/
+
+@media only screen and (max-width: 1400px) {
+
+body {
+  width: 1350px;
+}
+
+#container1 {
+    padding: 70px;
+}
+
+#container2 {
+    padding: 70px;
+    margin-top: 30px;
+    padding-left: 60px;
+    width: 440px;
+}
+
+#heading {
+    font-size: 30px;
+}
+
+#calendar {
+  width: 500px;
+  height: 535px;
+  background-repeat: no-repeat;
+}
+
+#key {
+  width: 500px;
+  height: 50px;
+  grid-template-columns: 70px 450px 70px;
+  padding-top: 10px;
+}
+
+#bar {
+  height: 50px;
+  width: 450px;
+}
+
+.monthname {
+  font-size: 25px;
+  padding-top: 120px;
+}
+
+#squares {
+  width: 400px;
+  height: 285px;
+  margin-left: 50px;
+  margin-right: 55px;
+  margin-top: 165px;
+  margin-bottom: 60px;
+}
+
+.days {
+  width: 51px;
+  height: 51px;
+  font-size: 15px;
+}
+
+.min, .max {
+  font-size: 16px;
+}
+
+.clicked, .unclicked {
+  width: 188px;
+  height: 56px;
+
+}
+
+#buttons1 {
+  height: 155px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+#buttons2 {
+  height: 235px;
+  padding-top: 30px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    grid-template-columns: 100%;
+    width: 750px;
+  }
+}
