@@ -6,7 +6,7 @@ function renderMonth(data) {
 
   for (let i = 1; i <= data.length; i++) {
     let days = document.createElement('div');
-    days.innerHTML = i + '-' + data[i][2];
+    days.innerHTML = i + ' ' + data[i][2];
     days.className = 'days';
 
     if (data[i][2] < 10500) {
@@ -56,7 +56,7 @@ endpoints = [
   '/nzseptember',
   '/nzoctober',
   '/nznovember',
-  '/nzdecember'
+  '/nzdecember',
 ]
 
 endpoint = 0;
@@ -78,7 +78,7 @@ document.getElementById('nextarrow').addEventListener('click', () => {
 
 document.getElementById('backarrow').addEventListener('click', () => {
 
-  // load birthdays - MAKE IT GO BACKWARDS!
+  // load birthdays - back
   fetch(endpoints[endpoint], { method: 'GET' })
     .then(response => response.json())
     .then(data => {
@@ -88,4 +88,29 @@ document.getElementById('backarrow').addEventListener('click', () => {
 
     console.log(endpoints[endpoint])
     -- endpoint;
+})
+
+names = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June'
+]
+
+name = 0;
+
+document.getElementById('nextarrow').addEventListener('click', () => {
+
+  for (let i = 0; i <= names.length; i++) {
+    let monthname = document.createElement('div');
+    monthname.innerHTML = name;
+    monthname.className = 'monthname';
+    document.getElementById('calendar').appendChild(monthname);
+  }
+
+  console.log(names[name])
+  name ++;
+
 })

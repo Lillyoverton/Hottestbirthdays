@@ -104,6 +104,7 @@ body {
   height: 100px;
   left: 60px;
   top: 360px;
+  cursor: pointer;
 }
 
 #nextarrow {
@@ -114,6 +115,7 @@ body {
   height: 100px;
   left: 685px;
   top: 360px;
+  cursor: pointer;
 }
 
 /* class selectors */
@@ -125,8 +127,7 @@ body {
   margin: auto;
   text-align: center;
   top: 135px;
-  font-size: 13px;
-  line-height: 10px;
+  font-size: 30px;
   color: #2A3159;
 
 }
@@ -151,6 +152,13 @@ body {
   grid-column-start: auto;
   margin: auto;
   border-radius: 5px;
+  color: rgba(0, 0, 0, 0);
+  font-size: 17px;
+  text-align: center;
+}
+
+.days:hover {
+  color: #2A3159;
 }
 
 .min, .max {
@@ -175,6 +183,7 @@ body {
 .unclicked {
   background-color: #FFFFFF;
   color: #2A3159;
+  cursor: pointer;
 }
 
 .clicked {
