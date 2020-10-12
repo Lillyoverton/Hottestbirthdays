@@ -9,9 +9,15 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/uk')
+@app.route('/england')
 def ukresults():
     return render_template('ukresults.html')
+
+@app.route('/USA')
+def usresults():
+    return render_template('usresults.html')
+
+#NZ data for each month
 
 @app.route('/nzjanuary', methods=['GET'])
 def nzjanuary_list():
@@ -146,7 +152,7 @@ def nzdecember_list():
     return jsonify(nzdecember)
 
 
-
+#England data for each month
 
 @app.route('/ukjanuary', methods=['GET'])
 def ukjanuary_list():
@@ -279,3 +285,138 @@ def ukdecember_list():
         ukdecember.append(list(row))
     con.close()
     return jsonify(ukdecember)
+
+
+#USA data for each month
+
+@app.route('/usjanuary', methods=['GET'])
+def usjanuary_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usjanuary = []
+    cur = con.execute('SELECT * FROM usjanuary')
+
+    for row in cur:
+        usjanuary.append(list(row))
+    con.close()
+    return jsonify(usjanuary)
+
+@app.route('/usfebruary', methods=['GET'])
+def usfebruary_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usfebruary = []
+    cur = con.execute('SELECT * FROM usfebruary')
+
+    for row in cur:
+        usfebruary.append(list(row))
+    con.close()
+    return jsonify(usfebruary)
+
+@app.route('/usmarch', methods=['GET'])
+def usmarch_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usmarch = []
+    cur = con.execute('SELECT * FROM usmarch')
+
+    for row in cur:
+        usmarch.append(list(row))
+    con.close()
+    return jsonify(usmarch)
+
+@app.route('/usapril', methods=['GET'])
+def usapril_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usapril = []
+    cur = con.execute('SELECT * FROM usapril')
+
+    for row in cur:
+        usapril.append(list(row))
+    con.close()
+    return jsonify(usapril)
+
+@app.route('/usmay', methods=['GET'])
+def usmay_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usmay = []
+    cur = con.execute('SELECT * FROM usmay')
+
+    for row in cur:
+        usmay.append(list(row))
+    con.close()
+    return jsonify(usmay)
+
+@app.route('/usjune', methods=['GET'])
+def usjune_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usjune = []
+    cur = con.execute('SELECT * FROM usjune')
+
+    for row in cur:
+        usjune.append(list(row))
+    con.close()
+    return jsonify(usjune)
+
+@app.route('/usjuly', methods=['GET'])
+def usjuly_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usjuly = []
+    cur = con.execute('SELECT * FROM usjuly')
+
+    for row in cur:
+        usjuly.append(list(row))
+    con.close()
+    return jsonify(usjuly)
+
+@app.route('/usaugust', methods=['GET'])
+def usaugust_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usaugust = []
+    cur = con.execute('SELECT * FROM usaugust')
+
+    for row in cur:
+        usaugust.append(list(row))
+    con.close()
+    return jsonify(usaugust)
+
+@app.route('/usseptember', methods=['GET'])
+def usseptember_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usseptember = []
+    cur = con.execute('SELECT * FROM usseptember')
+
+    for row in cur:
+        usseptember.append(list(row))
+    con.close()
+    return jsonify(usseptember)
+
+@app.route('/usoctober', methods=['GET'])
+def usoctober_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usoctober = []
+    cur = con.execute('SELECT * FROM usoctober')
+
+    for row in cur:
+        usoctober.append(list(row))
+    con.close()
+    return jsonify(usoctober)
+
+@app.route('/usnovember', methods=['GET'])
+def usnovember_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usnovember = []
+    cur = con.execute('SELECT * FROM usnovember')
+
+    for row in cur:
+        usnovember.append(list(row))
+    con.close()
+    return jsonify(usnovember)
+
+@app.route('/usdecember', methods=['GET'])
+def  usdecember_list():
+    con = sqlite3.connect(BIRTHDAYSDB)
+    usdecember = []
+    cur = con.execute('SELECT * FROM usdecember')
+
+    for row in cur:
+        usdecember.append(list(row))
+    con.close()
+    return jsonify(usdecember)

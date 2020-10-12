@@ -1,4 +1,4 @@
-// England data
+// USA data
 
 // render data / colour by value
 function renderMonth(data) {
@@ -46,18 +46,18 @@ function renderMonth(data) {
 
 // put data in order
 endpoints = [
-  '/ukjanuary',
-  '/ukfebruary',
-  '/ukmarch',
-  '/ukapril',
-  '/ukmay',
-  '/ukjune',
-  '/ukjuly',
-  '/ukaugust',
-  '/ukseptember',
-  '/ukoctober',
-  '/uknovember',
-  '/ukdecember',
+  '/usjanuary',
+  '/usfebruary',
+  '/usmarch',
+  '/usapril',
+  '/usmay',
+  '/usjune',
+  '/usjuly',
+  '/usaugust',
+  '/usseptember',
+  '/usoctober',
+  '/usnovember',
+  '/usdecember',
 ]
 
 endpoint = 0;
@@ -109,6 +109,7 @@ document.getElementById('backarrow').addEventListener('click', () => {
 
     console.log(endpoints[endpoint])
 })
+
 
 // put month names in order
 names = [

@@ -1,4 +1,6 @@
+// NZ data
 
+// render data / colour by value
 
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
@@ -42,7 +44,7 @@ function renderMonth(data) {
   }
 }
 
-
+// put data in order
 endpoints = [
   '/nzjanuary',
   '/nzfebruary',
@@ -60,6 +62,7 @@ endpoints = [
 
 endpoint = 0;
 
+// get birthday data
 fetch(endpoints[endpoint], { method: 'GET' })
   .then(response => response.json())
   .then(data => {
@@ -69,6 +72,7 @@ fetch(endpoints[endpoint], { method: 'GET' })
 
   console.log(endpoints[endpoint])
 
+// go to next month using arrow
 document.getElementById('nextarrow').addEventListener('click', () => {
 
   endpoint ++;
@@ -87,7 +91,7 @@ document.getElementById('nextarrow').addEventListener('click', () => {
     console.log(endpoints[endpoint])
 })
 
-
+// go to previous month using arrow
 document.getElementById('backarrow').addEventListener('click', () => {
 
   -- endpoint;
@@ -106,6 +110,7 @@ document.getElementById('backarrow').addEventListener('click', () => {
     console.log(endpoints[endpoint])
 })
 
+// put month names in order
 names = [
   'January',
   'February',
@@ -123,6 +128,7 @@ names = [
 
 name = 0;
 
+// render month names
 monthname = document.createElement('div');
 
 monthname.innerHTML = names[name];
@@ -131,6 +137,7 @@ document.getElementById('calendar').appendChild(monthname);
 
 console.log(names[name])
 
+// go to next month name using arrow
 document.getElementById('nextarrow').addEventListener('click', () => {
 
   name ++;
@@ -147,7 +154,7 @@ document.getElementById('nextarrow').addEventListener('click', () => {
 
 })
 
-
+// go to previous month name using arrow
 document.getElementById('backarrow').addEventListener('click', () => {
 
   -- name;
