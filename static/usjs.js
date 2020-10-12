@@ -6,7 +6,9 @@ function renderMonth(data) {
 
   for (let i = 1; i <= data.length; i++) {
     let days = document.createElement('div');
-    days.innerHTML = i + ' ' + data[i][2];
+    day = '<span class="day">' + i + '</span><br />'
+    amount = '<span class="amount">' + data[i][2] + '</span><br />'
+    days.innerHTML =  day + amount;
     days.className = 'days';
 
     if (data[i][2] > 43000) {
