@@ -1,4 +1,4 @@
-
+// uk data
 
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
@@ -8,54 +8,55 @@ function renderMonth(data) {
     days.innerHTML = i + ' ' + data[i][2];
     days.className = 'days';
 
-    if (data[i][2] < 10500) {
-      days.style.backgroundColor = '#FFECAA';
-    }
-    else if (data[i][2] < 11000) {
-      days.style.backgroundColor = '#FFE58C';
-    }
-    else if (data[i][2] < 11500) {
-      days.style.backgroundColor = '#FFD84A';
-    }
-    else if (data[i][2] < 12000) {
-      days.style.backgroundColor = '#FFBF43';
-    }
-    else if (data[i][2] < 12500) {
-      days.style.backgroundColor = '#FFA443';
-    }
-    else if (data[i][2] < 13000) {
-      days.style.backgroundColor = '#FF8744';
-    }
-    else if (data[i][2] < 13500) {
-      days.style.backgroundColor = '#FD6930';
-    }
-    else if (data[i][2] < 14000) {
-      days.style.backgroundColor = '#FF4337';
-    }
-    else if (data[i][2] < 14500) {
-      days.style.backgroundColor = '#EE3033';
-    }
-    else {
+    if (data[i][2] > 43000) {
       days.style.backgroundColor = '#D22224';
     }
+    else if (data[i][2] > 40500) {
+      days.style.backgroundColor = '#EE3033';
+    }
+    else if (data[i][2] > 39000) {
+      days.style.backgroundColor = '#FF4337';
+    }
+    else if (data[i][2] > 37500) {
+      days.style.backgroundColor = '#FD6930';
+    }
+    else if (data[i][2] > 36000) {
+      days.style.backgroundColor = '#FF8744';
+    }
+    else if (data[i][2] > 34500) {
+      days.style.backgroundColor = '#FFA443';
+    }
+    else if (data[i][2] > 33000) {
+      days.style.backgroundColor = '#FFBF43';
+    }
+    else if (data[i][2] > 31500) {
+      days.style.backgroundColor = '#FFD84A';
+    }
+    else if (data[i][2] > 30000) {
+      days.style.backgroundColor = '#FFE58C';
+    }
+    else {
+      days.style.backgroundColor = '#FFECAA';
+    }
+
     document.getElementById('squares').appendChild(days);
   }
 }
 
 
 endpoints = [
-  '/nzjanuary',
-  '/nzfebruary',
-  '/nzmarch',
-  '/nzapril',
-  '/nzmay',
-  '/nzjune',
-  '/nzjuly',
-  '/nzaugust',
-  '/nzseptember',
-  '/nzoctober',
-  '/nznovember',
-  '/nzdecember',
+  '/ukjanuary',
+  '/ukfebruary',
+  '/ukmarch',
+  '/ukapril',
+  '/ukmay',
+  '/ukjune',
+  '/ukjuly',
+  '/ukaugust',
+  '/ukseptember',
+  '/ukoctober',
+  '/uknovember',
+  '/ukdecember',
 ]
 
 endpoint = 0;
@@ -87,7 +88,6 @@ document.getElementById('nextarrow').addEventListener('click', () => {
     console.log(endpoints[endpoint])
 })
 
-
 document.getElementById('backarrow').addEventListener('click', () => {
 
   -- endpoint;
@@ -105,6 +105,7 @@ document.getElementById('backarrow').addEventListener('click', () => {
 
     console.log(endpoints[endpoint])
 })
+
 
 names = [
   'January',

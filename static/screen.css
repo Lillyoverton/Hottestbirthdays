@@ -47,6 +47,12 @@ body {
   height: 571px;
 }
 
+#calendaruk {
+  background-image: url('calendarblank.svg');
+  width: 560px;
+  height: 571px;
+}
+
 #buttons1 {
   width: 195px;
   height: 160px;
@@ -76,7 +82,7 @@ body {
 
 #bar {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto;
   height: 60px;
   width: 525px;
 }
@@ -92,21 +98,33 @@ body {
 }
 
 #level3 {
-  background-color: #FFA443;
+  background-color: #FFBF43;
 
 }
 
 #level4 {
-  background-color: #FF7D4B;
+  background-color: #FFA443;
+}
+
+#level4 {
+  background-color: #FF8744;
 }
 
 #level5 {
-  background-color: #F54A4C;
+  background-color: #FD6930;
+}
+
+#level6 {
+  background-color: #FF4337;
+}
+
+#level7 {
+  background-color: #EE3033;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-#backarrow {
+#backarrow, #backarrowuk {
   background-image: url('arrowleft.svg');
   background-repeat: no-repeat;
   width: 55px;
@@ -140,11 +158,24 @@ body {
   grid-template-columns: auto auto auto auto auto auto auto;
   position: absolute;
   width: 440px;
-  height: 312px;
   margin-left: 58px;
   margin-right: 58px;
   margin-top: 190px;
   margin-bottom: 60px;
+  grid-row-gap: 7px;;
+
+}
+
+#squaresuk {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  position: absolute;
+  width: 440px;
+  margin-left: 58px;
+  margin-right: 58px;
+  margin-top: 190px;
+  margin-bottom: 60px;
+  grid-row-gap: 7px;;
 
 }
 
@@ -153,12 +184,23 @@ body {
   width: 57px;
   height: 57px;
   grid-column-start: auto;
-  margin: auto;
   border-radius: 5px;
   color: rgba(0, 0, 0, 0);
   font-size: 17px;
   text-align: center;
 }
+
+.ukdays {
+  background-color: #FFA443;
+  width: 57px;
+  height: 57px;
+  grid-column-start: auto;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0);
+  font-size: 17px;
+  text-align: center;
+}
+
 
 .days:hover {
   color: #2A3159;
@@ -181,6 +223,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 60px;
+  text-decoration: none;
 }
 
 .unclicked {
@@ -241,11 +284,11 @@ body {
 
   #squares {
     width: 400px;
-    height: 285px;
     margin-left: 50px;
     margin-right: 55px;
     margin-top: 165px;
     margin-bottom: 60px;
+    grid-row-gap: 5px;
   }
 
   .days {
