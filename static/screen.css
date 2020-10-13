@@ -204,11 +204,11 @@ body {
   color: white ;
 }
 
-.amount {
+.amount, .births {
   color: rgba(0, 0, 0, 0);
 }
 
-.amount:hover {
+.amount:hover, .births:hover {
   color: #2A3159;
 }
 
@@ -301,6 +301,7 @@ body {
     width: 51px;
     height: 51px;
     font-size: 15px;
+    cursor: pointer;
   }
 
   .min, .max {

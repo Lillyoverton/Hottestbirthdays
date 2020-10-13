@@ -7,7 +7,7 @@ function renderMonth(data) {
   for (let i = 1; i <= data.length; i++) {
     let days = document.createElement('div');
     day = '<span class="day">' + i + '</span><br />'
-    amount = '<span class="amount">' + data[i][2] + '</span><br />'
+    amount = '<span class="amount">' + data[i][2] + '<br />' + 'births' + '</span><br />'
     days.innerHTML =  day + amount;
     days.className = 'days';
 
