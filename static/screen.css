@@ -539,4 +539,36 @@ body {
     height: 430px;
   }
 
+  #year {
+      width: 350px;
+      margin-left: 25px;
+      margin-right: 20px;
+      margin-top: 8px;
+      margin-bottom: 50px;
+  }
+
+  .dayssml {
+    width: 25px;
+    height: 7px;
+    margin-bottom: 2px;
+  }
+
+  #numbers {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  #monthnames {
+    font-size: 9px;
+    height: 5px;
+    padding-top: 95px;
+    padding-left: 50px;
+    padding-bottom: 0.5px;
+  }
+
+  .name {
+    padding-left: 6.9px;
+    padding-right: 6.9px;
+  }
+
 }
