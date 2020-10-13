@@ -17,6 +17,20 @@ def ukresults():
 def usresults():
     return render_template('usresults.html')
 
+@app.route('/NZ/year')
+def nzyear():
+    return render_template('nzyear.html')
+
+@app.route('/england/year')
+def ukyear():
+    return render_template('ukyear.html')
+
+@app.route('/USA/year')
+def usyear():
+    return render_template('usyear.html')
+
+
+
 #NZ data for each month
 
 @app.route('/nzjanuary', methods=['GET'])

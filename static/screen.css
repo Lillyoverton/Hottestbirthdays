@@ -47,12 +47,6 @@ body {
   height: 571px;
 }
 
-#calendaruk {
-  background-image: url('calendarblank.svg');
-  width: 560px;
-  height: 571px;
-}
-
 #buttons1 {
   width: 195px;
   height: 160px;
@@ -162,21 +156,7 @@ body {
   margin-right: 58px;
   margin-top: 190px;
   margin-bottom: 60px;
-  grid-row-gap: 7px;;
-
-}
-
-#squaresuk {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  position: absolute;
-  width: 440px;
-  margin-left: 58px;
-  margin-right: 58px;
-  margin-top: 190px;
-  margin-bottom: 60px;
-  grid-row-gap: 7px;;
-
+  grid-row-gap: 7px;
 }
 
 .days {
@@ -186,16 +166,6 @@ body {
   grid-column-start: auto;
   border-radius: 5px;
   color: rgba(0, 0, 0, 0);
-  font-size: 17px;
-  text-align: center;
-}
-
-.ukdays {
-  background-color: #FFA443;
-  width: 57px;
-  height: 57px;
-  grid-column-start: auto;
-  border-radius: 5px;
   font-size: 17px;
   text-align: center;
 }
@@ -243,6 +213,58 @@ body {
   color: #FFFFFF;
 }
 
+
+/* year view */
+
+#yearcalendar {
+  background-image: url('calendarblank.svg');
+  width: 560px;
+  height: 571px;
+  margin-left: 50px;
+}
+
+#year {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 465px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+.dayssml {
+  width: 35px;
+  height: 10px;
+  border-radius: 2px;
+  margin-bottom: 2px;
+}
+
+#numbers {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  line-height: 11px;
+  margin-right: 3px;
+}
+
+#monthnames {
+  font-size: 12px;
+  height: 5px;
+  padding-top: 135px;
+  padding-left: 55px;
+  padding-bottom: 5px;
+}
+
+.name {
+  padding-left: 6.9px;
+  padding-right: 6.9px;
+  text-align: center;
+}
+
+
+
+/* media queries */
 
 @media only screen and (max-width: 1400px) {
 
@@ -325,6 +347,13 @@ body {
     padding-top: 30px;
   }
 
+/* year pages */
+  #calendar {
+    width: 500px;
+    height: 535px;
+    background-repeat: no-repeat;
+  }
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -366,6 +395,47 @@ body {
     padding-bottom: 30px;
   }
 
+}
+
+/* year pages */
+
+#yearcalendar {
+  width: 500px;
+  height: 535px;
+  background-repeat: no-repeat;
+  margin-left: 40px;
+}
+
+#year {
+    width: 420px;
+    margin-left: 35px;
+    margin-right: 20px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+}
+
+.dayssml {
+  width: 30px;
+  height: 8.7px;
+  margin-bottom: 2px;
+}
+
+#numbers {
+  font-size: 10px;
+  line-height: 11px;
+}
+
+#monthnames {
+  font-size: 10px;
+  height: 5px;
+  padding-top: 120px;
+  padding-left: 50px;
+  padding-bottom: 2px;
+}
+
+.name {
+  padding-left: 6.9px;
+  padding-right: 6.9px;
 }
 
 @media only screen and (max-width:650px) {
@@ -460,6 +530,13 @@ body {
 
   .days {
     font-size: 12px;
+  }
+
+
+  /* year pages */
+  #yearcalendar {
+    width: 400px;
+    height: 430px;
   }
 
 }
