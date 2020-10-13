@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hottestbirthdays</title>
+    <meta name="description" content="How popular is your birthday?" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
+  </head>
+
+  <body>
+
+    <div id="container1">
+
+        <div id="yearcalendar">
+          <div id="monthnames">
+            <span class="name">Jan</span>
+            <span class="name">Feb</span>
+            <span class="name">Mar</span>
+            <span class="name">Apr</span>
+            <span class="name">May</span>
+            <span class="name">Jun</span>
+            <span class="name">Jul</span>
+            <span class="name">Aug</span>
+            <span class="name">Sep</span>
+            <span class="name">Oct</span>
+            <span class="name">Nov</span>
+            <span class="name">Dec</span>
+          </div>
+          <div id="year">
+            <ul id="numbers" style="list-style-type:none;">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+            </ul>
+            <div id="jan"></div>
+            <div id="feb"></div>
+            <div id="mar"></div>
+            <div id="apr"></div>
+            <div id="may"></div>
+            <div id="jun"></div>
+            <div id="jul"></div>
+            <div id="aug"></div>
+            <div id="sep"></div>
+            <div id="oct"></div>
+            <div id="nov"></div>
+            <div id="dec"></div>
+          </div>
+        </div>
+
+      <div id="key">
+        <div class="min">10500</div>
+          <div id="bar">
+            <div id="level1"></div>
+            <div id="level2"></div>
+            <div id="level3"></div>
+            <div id="level4"></div>
+            <div id="level5"></div>
+            <div id="level6"></div>
+            <div id="level7"></div>
+          </div>
+        <div class="max">14500</div>
+      </div>
+  </div>
+
+  <div id="container2">
+
+    <h1 id="heading">How popular is your birthday?</h1>
+
+    <div id="buttons1">
+      <a class="unclicked" href="{{ url_for('index') }}">Month</a>
+      <a class="clicked">Year</a>
+    </div>
+
+    <div id="buttons2">
+      <a class="unclicked" href="{{ url_for('nzyear') }}">New Zealand</a>
+      <a class="clicked">England</a>
+      <a class="unclicked" href="{{ url_for('usyear') }}">USA</a>
+    </div>
+
+  </div>
+
+    <script src="{{ url_for('static', filename='ukyear.js') }}"></script>
+
+  </body>
+
+</html>

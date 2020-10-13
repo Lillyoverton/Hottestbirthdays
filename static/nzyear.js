@@ -1,7 +1,3 @@
-
-
-
-
 // render data / colour by value
 months = [
   '/nzjanuary',
