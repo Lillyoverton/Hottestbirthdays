@@ -4,38 +4,38 @@
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
 
-  for (let i = 1; i <= data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     let days = document.createElement('div');
-    day = '<span class="day">' + i + '</span><br />'
-    amount = '<span class="amount">' + data[i][2] + '<br />' + 'births' + '</span><br />'
+    day = '<span class="day">' + data[i][1] + '</span><br />'
+    amount = '<span class="amount">' + data[i][2] + '</span>'
     days.innerHTML =  day + amount;
     days.className = 'days';
 
-    if (data[i][2] > 112000) {
+    if (data[i][2] > 116000) {
       days.style.backgroundColor = '#D22224';
     }
-    else if (data[i][2] > 108000) {
+    else if (data[i][2] > 112000) {
       days.style.backgroundColor = '#EE3033';
     }
-    else if (data[i][2] > 104000) {
+    else if (data[i][2] > 108000) {
       days.style.backgroundColor = '#FF4337';
     }
-    else if (data[i][2] > 100000) {
+    else if (data[i][2] > 104000) {
       days.style.backgroundColor = '#FD6930';
     }
-    else if (data[i][2] > 96000) {
+    else if (data[i][2] > 100000) {
       days.style.backgroundColor = '#FF8744';
     }
-    else if (data[i][2] > 92000) {
+    else if (data[i][2] > 96000) {
       days.style.backgroundColor = '#FFA443';
     }
-    else if (data[i][2] > 88000) {
+    else if (data[i][2] > 92000) {
       days.style.backgroundColor = '#FFBF43';
     }
-    else if (data[i][2] > 84000) {
+    else if (data[i][2] > 88000) {
       days.style.backgroundColor = '#FFD84A';
     }
-    else if (data[i][2] > 80000) {
+    else if (data[i][2] > 84000) {
       days.style.backgroundColor = '#FFE58C';
     }
     else {

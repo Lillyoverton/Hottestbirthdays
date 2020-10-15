@@ -171,14 +171,16 @@ body {
 }
 
 .day {
-  color: white ;
+  color: white;
 }
 
-.amount, .births {
+.amount{
   color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.amount:hover, .births:hover {
+.amount:hover{
   color: #2A3159;
 }
 
@@ -226,16 +228,19 @@ body {
 #year {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    width: 465px;
+    width: 475px;
     margin-left: 40px;
     margin-right: 20px;
     margin-top: 8px;
     margin-bottom: 50px;
 }
 
+#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec {
+}
+
 .dayssml {
-  width: 35px;
-  height: 10px;
+  width: 34px;
+  height: 9.6px;
   border-radius: 2px;
   margin-bottom: 2px;
 }
@@ -244,24 +249,28 @@ body {
   font-size: 12px;
   padding: 0;
   margin: 0;
-  line-height: 11px;
+  line-height: 6px;
   margin-right: 3px;
+  padding-top: 3px;
+}
+
+#numbers li {
+  padding-bottom: 5.7px;
 }
 
 #monthnames {
   font-size: 12px;
   height: 5px;
   padding-top: 135px;
-  padding-left: 55px;
+  padding-left: 60px;
   padding-bottom: 5px;
 }
 
 .name {
-  padding-left: 6.9px;
-  padding-right: 6.9px;
+  padding-left: 7px;
+  padding-right: 7px;
   text-align: center;
 }
-
 
 
 /* media queries */
@@ -274,6 +283,7 @@ body {
 
   #container1 {
       padding: 70px;
+      padding-left: 50px;
   }
 
   #container2 {
@@ -298,6 +308,7 @@ body {
     height: 50px;
     grid-template-columns: 70px 450px 70px;
     padding-top: 10px;
+    padding-left: 10px;
   }
 
   #bar {
@@ -348,11 +359,50 @@ body {
   }
 
 /* year pages */
-  #calendar {
+  #yearcalendar {
     width: 500px;
     height: 535px;
     background-repeat: no-repeat;
+    margin-left: 50px;
   }
+
+  #year {
+      width: 430px;
+      margin-left: 32px;
+      margin-right: 20px;
+      margin-top: 8px;
+      margin-bottom: 50px;
+  }
+
+  .dayssml {
+    width: 31px;
+    height: 8.4px;
+    margin-bottom: 2px;
+  }
+
+  #monthnames {
+    padding-top: 120px;
+    font-size: 12px;
+    padding-left: 52px;
+  }
+
+  .name {
+    padding-left: 5.1px;
+    padding-right: 5.1px;
+  }
+
+  #numbers {
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    line-height: 5px;
+    padding-top: 2px;
+  }
+
+  #numbers li {
+    padding-bottom: 5.4px;
+  }
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -397,47 +447,6 @@ body {
 
 }
 
-/* year pages */
-
-#yearcalendar {
-  width: 500px;
-  height: 535px;
-  background-repeat: no-repeat;
-  margin-left: 45px;
-}
-
-#year {
-    width: 420px;
-    margin-left: 35px;
-    margin-right: 20px;
-    margin-top: 8px;
-    margin-bottom: 50px;
-}
-
-.dayssml {
-  width: 30px;
-  height: 8.7px;
-  margin-bottom: 2px;
-}
-
-#numbers {
-  font-size: 10px;
-  line-height: 11px;
-}
-
-#monthnames {
-  font-size: 10px;
-  height: 5px;
-  padding-top: 120px;
-  padding-left: 50px;
-  padding-bottom: 2px;
-}
-
-.name {
-  padding-left: 6.9px;
-  padding-right: 6.9px;
-}
-
 @media only screen and (max-width:650px) {
 
   #heading {
@@ -459,7 +468,7 @@ body {
 
   #container1 {
     width: 485px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 20px;
     margin: auto;
   }
@@ -532,43 +541,8 @@ body {
     font-size: 12px;
   }
 
-
-  /* year pages */
   #yearcalendar {
-    width: 400px;
-    height: 430px;
-  }
-
-  #year {
-      width: 350px;
-      margin-left: 25px;
-      margin-right: 20px;
-      margin-top: 8px;
-      margin-bottom: 50px;
-  }
-
-  .dayssml {
-    width: 25px;
-    height: 7px;
-    margin-bottom: 2px;
-  }
-
-  #numbers {
-    font-size: 9px;
-    line-height: 10px;
-  }
-
-  #monthnames {
-    font-size: 9px;
-    height: 5px;
-    padding-top: 95px;
-    padding-left: 50px;
-    padding-bottom: 0.5px;
-  }
-
-  .name {
-    padding-left: 6.9px;
-    padding-right: 6.9px;
+    margin: auto;
   }
 
 }

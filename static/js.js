@@ -5,10 +5,10 @@
 function renderMonth(data) {
   document.getElementById('squares').innerHTML = '';
 
-  for (let i = 1; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     let days = document.createElement('div');
-    day = '<span class="day">' + i + '</span><br />'
-    amount = '<span class="amount">' + data[i][2] + '<br />' + 'births' + '</span><br />'
+    day = '<span class="day">' + data[i][1] + '</span><br />'
+    amount = '<span class="amount">' + data[i][2] + '</span>'
     days.innerHTML =  day + amount;
     days.className = 'days';
 

@@ -281,7 +281,7 @@ def ukoctober_list():
 @app.route('/uknovember', methods=['GET'])
 def uknovember_list():
     con = sqlite3.connect(BIRTHDAYSDB)
-    ukonovember = []
+    uknovember = []
     cur = con.execute('SELECT * FROM uknovember')
 
     for row in cur:

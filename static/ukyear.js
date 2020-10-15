@@ -36,7 +36,7 @@ for (let month = 0; month < id.length; month++) {
     .then(data => {
       console.log(data);
       document.getElementById(id[month]).innerHTML = '';
-      for (let i = 1; i < data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         let days = document.createElement('div');
         days.className = 'dayssml';
 
