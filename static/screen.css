@@ -413,17 +413,15 @@ body {
   }
 
   #container1 {
-    margin-top: 0px;
-    padding-top: 0px;
     grid-row-start: 2;
   }
 
   #container2 {
     margin: auto;
-    padding-top: 0px;
-    margin-top: 0px;
     width: 610px;
     grid-row-start: 1;
+    padding-top: 40px;
+    padding-bottom: 0;
   }
 
   #buttons1 {
@@ -441,7 +439,6 @@ body {
 
   #heading {
     text-align: center;
-    padding-top: 40px;
     padding-bottom: 30px;
   }
 
@@ -452,7 +449,6 @@ body {
   #heading {
       font-size: 25px;
       width: auto;
-      padding-top: 30px;
       padding-bottom: 20px;
   }
 
@@ -475,7 +471,7 @@ body {
 
   #container2 {
     width: 480px;
-    padding-bottom: 55px;
+    padding-bottom: 0px;
   }
 
   .monthname {
@@ -543,6 +539,10 @@ body {
 
   #yearcalendar {
     margin: auto;
+  }
+
+  .amount{
+    font-size: 12px;
   }
 
 }
